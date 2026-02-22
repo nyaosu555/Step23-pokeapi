@@ -8,6 +8,20 @@
   </head>
   <body>
     <div id="app"></div>
+    <div>
+      <h1>ポケモンAPIを叩く！</h1>
+      <p>下の入力欄に調べたいポケモンの名前か図鑑番号を入力してください。</p>
+      <form id="poke-form">
+        <input type="text" id="pokemon" name="pokemon">
+        <button type="submit">データをゲットだぜ！</button>
+      </form>
+      <div id="result">
+        <p class="poke-name" id="js-poke-name"></p>
+        <p class="poke-ja-name" id="js-poke-ja-name"></p>
+        <img src="" alt="" class="poke-img" id="js-poke-img" width="150" height="150">
+        <p class="poke-type" id="js-poke-type"></p>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
